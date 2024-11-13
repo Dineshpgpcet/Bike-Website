@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">login</button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-whatever="@getbootstrap">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">UserName:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">password:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!--Sign up-->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="signupForm">
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                      <label for="full-name" class="col-form-label">Full Name:</label>
+                      <input type="text" class="form-control" id="full-name" required>
+                    </div>
+          
+                    <!-- Email -->
+                    <div class="mb-3">
+                      <label for="email" class="col-form-label">Email Address:</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+          
+                    <!-- Password -->
+                    <div class="mb-3">
+                      <label for="password" class="col-form-label">Password:</label>
+                      <input type="password" class="form-control" id="password" required>
+                    </div>
+          
+                    <!-- Confirm Password -->
+                    <div class="mb-3">
+                      <label for="confirm-password" class="col-form-label">Confirm Password:</label>
+                      <input type="password" class="form-control" id="confirm-password" required>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="signupBtn">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://c1.wallpaperflare.com/preview/386/67/744/royal-enfield-bullet-bike-motorcycle.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/c9/8b/ce/c98bce62993094c288afc4bfd1dbffd5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://imgd.aeplcdn.com/642x361/n/cw/ec/111297/yamaha-yzf-r15-right-front-three-quarter7.jpeg?isig=0&wm=2&q=75" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--heroes-->
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./suzuki-hayabusa-suzuki-bikes-hd-wallpaper-preview.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">"Hayabusa: Pioneers of Performance"</h1>
+            <p class="lead">The Suzuki Hayabusa is a high-performance sportbike that became legendary for its speed and engineering. Originally introduced in 1999, the bike was powered by a 1,340cc engine and earned the nickname “the fastest production motorcycle” for many years. </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Read more</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--features-->
+          <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Custom cards</h2>     
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./desktop-wallpaper-motorcycle-iphone-on-dog-stylish-bikes-thumbnail.jpg'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">"Style Meets Substance"</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./1234.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Earth</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>3d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>       
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./03deb2383204cd93c7a7f6103a6dff44.jpeg'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">"Elevate Your Everyday Look with Timeless Style and Functionality"</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./hero.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Pakistan</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>4d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./wp5883727.webp'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">"Discover Exceptional Design Crafted for Style and Durability"</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./honda.webp" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>California</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>5d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!--1-->
+            <div class="container">
+              <div class="row">            
+            <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://bd.gaadicdn.com/processedimages/tvs/tvs-xl100/source/tvs-xl10065ec3eeed6a9c.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">XL100</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">₹38,677</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                      <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                    </div>
+                  </div>
+                </div>
+                  <!--2-->
+                  <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/2830762/pexels-photo-2830762.jpeg?cs=srgb&dl=pexels-vo-huy-1470298-2830762.jpg&fm=jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">MIT</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">₹35,000</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                          <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                        </div>
+                      </div>
+                    </div>
+                      <!--3-->
+                      <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://catalog-management.s3.ap-south-1.amazonaws.com/htmobile1/hero_hfdeluxe/images/exterior_hero-hf-deluxe_right-side-view_600x400.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">HERO HONDA</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">₹80,000</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                              <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                            </div>
+                          </div>
+                        </div>
+                        <!--4-->
+                        <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://w0.peakpx.com/wallpaper/848/517/HD-wallpaper-rx100-rx135-yamaha.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">RX100</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">₹75,000</h6>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                  <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!--5-->
+                            <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://wallpapercave.com/wp/wp2708380.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">NS PULSAR</h5>
+                                      <h6 class="card-subtitle mb-2 text-body-secondary">₹1,84,998.00</h6>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                      <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--6-->
+                                <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://images.unsplash.com/photo-1611916906759-4888e63eb5fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG9uZGElMjBiaWtlfGVufDB8fDB8fHww" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">HONDA</h5>
+                                          <h6 class="card-subtitle mb-2 text-body-secondary">₹88,750.00</h6>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                          <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--7-->
+                                    <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/115871/mt-15-v2-left-front-three-quarter.jpeg?isig=0&q=100" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">MT</h5>
+                                              <h6 class="card-subtitle mb-2 text-body-secondary">₹2,49,990.00</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                              <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!--8-->
+                                        <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="https://wallpapercat.com/w/full/4/6/e/880590-3840x2160-desktop-4k-ktm-duke-bike-wallpaper-photo.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">DUKE</h5>
+                                                  <h6 class="card-subtitle mb-2 text-body-secondary">₹1,54,000.00</h6>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                                   <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!--9-->
+                                            <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                                <div class="card" style="width: 18rem;">
+                                                    <img src="https://img1.wallspic.com/previews/5/3/2/9/3/139235/139235-black_and_orange_sports_bike-550x310.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">KTM</h5>
+                                                      <h6 class="card-subtitle mb-2 text-body-secondary">₹1,08,000.0</h6>
+                                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                      <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                                      <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <!--10-->
+                                                <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                                    <div class="card" style="width: 18rem;">
+                                                        <img src="https://wallpapers.com/images/hd/motor-show-dio-bike-2017-p512qd00ajhrersl.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">DIO</h5>
+                                                          <h6 class="card-subtitle mb-2 text-body-secondary">₹62,778</h6>
+                                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                          <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                                          <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                    <!--11-->
+                                                    <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                                        <div class="card" style="width: 18rem;">
+                                                            <img src="https://wallpapers.com/images/featured/4k-bike-p5ztqfie3vnj5kkp.jpg" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                              <h5 class="card-title">ROYAL ENFIELD</h5>
+                                                              <h6 class="card-subtitle mb-2 text-body-secondary">₹1,99,330</h6>
+                                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                              <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                                              <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                                          </div>
+                                                          </div>
+                                                       </div>
+                                                        <!--12-->
+                                                        <div class="col-sm-6 col-md-3 col-lg-4 my-5">
+                                                            <div class="card" style="width: 18rem;">
+                                                                <img src="https://images.pexels.com/photos/18865724/pexels-photo-18865724.jpeg?cs=srgb&dl=pexels-koprivakart-18865724.jpg&fm=jpg" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                  <h5 class="card-title">R15</h5>
+                                                                  <h6 class="card-subtitle mb-2 text-body-secondary">₹1,53,000</h6>
+                                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                  <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                                                                  <a href="#" class="btn btn-primary"> <i class="fa-solid fa-cart-plus"></i> Add to card</a>
+                                                               </div>
+                                                              </div>
+                                                            </div>
+                                                          
+                                                          
+                                                          </div>
+
+                                                           </div>
+                                                           <!--Accordion-->
+                                                           <div class="accordion" id="accordionExample">
+                                                            <div class="accordion-item">
+                                                              <h2 class="accordion-header">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                  Which bike brand is Indian?
+                                                                </button>
+                                                              </h2>
+                                                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                  <strong>This is the first item's accordion body.</strong> Top bike brands in India like Hero MotoCorp, Bajaj Auto and TVS Motor company dominate the market. These companies offer a wide range of bikes at various price ranges to cater to the diverse needs of Indian consumers.
+                                                                  <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                              <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                  Which bike company is No 1?
+                                                                </button>
+                                                              </h2>
+                                                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                  <strong>This is the second item's accordion body.</strong> Hero MotoCorp is the biggest manufacturer of two wheelers in the world given the number of units made per year. <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                              <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                  What are the big 3 bike brands?
+                                                                </button>
+                                                              </h2>
+                                                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                  <strong>This is the third item's accordion body.</strong> Giant, Specialized and Trek name has been associated with mainstream cycling culture. The concept of those bike brands has become well known. Not always for their innovations but mostly for being around a lot. <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                           <!--footer-->
+                                                           <div class="container">
+                                                            <footer class="py-5">
+                                                              <div class="row">
+                                                                <div class="col-6 col-md-2 mb-3">
+                                                                  <h5>Section</h5>
+                                                                  <ul class="nav flex-column">
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                                                                  </ul>
+                                                                </div>
+                                                          
+                                                                <div class="col-6 col-md-2 mb-3">
+                                                                  <h5>Services</h5>
+                                                                  <ul class="nav flex-column">
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae esse quisquam animi ducimus tempora magni vel eos magnam perspiciatis aliquid sed, dolorem repudiandae obcaecati voluptate? Saepe consequuntur voluptate assumenda doloremque!</a></li>
+                                                
+                                                                  </ul>
+                                                                </div>
+                                                          
+                                                                <div class="col-6 col-md-2 mb-3">
+                                                                  <h5>contact</h5>
+                                                                  <ul class="nav flex-column">
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> <i class="fa-solid fa-location-dot"></i> 1/42,Middle street,A.Kovilpatti,Madyrai-625501</a></li>
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> <i class="fa-solid fa-envelope"></i> dinesh04@gmail.com</a></li>
+                                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> <i class="fa-solid fa-phone"></i> 6380788310</a></li>
+                                                                   
+                                                                  </ul>
+                                                                </div>
+                                                          
+                                                                <div class="col-md-5 offset-md-1 mb-3">
+                                                                  <form>
+                                                                    <h5>Subscribe to our newsletter</h5>
+                                                                    <p>Monthly digest of what's new and exciting from us.</p>
+                                                                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                                                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                                                                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                                                      <button class="btn btn-primary" type="button">Subscribe</button>
+                                                                    </div>
+                                                                  </form>
+                                                                </div>
+                                                              </div>
+                                                          
+                                                              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                                                                <p>© 2024 Company, Inc. All rights reserved.</p>
+                                                                <ul class="list-unstyled d-flex">
+                                                                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                                                                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                                                                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                                                                </ul>
+                                                              </div>
+                                                            </footer>
+                                                          </div>
+
+      
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+dinesh.html
+Displaying dinesh.html.
